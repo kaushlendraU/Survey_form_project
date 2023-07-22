@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+ </head>
+<body>
+  <div> 
+ <h1 id="title">Survey Form<h1>
+  <hr>
+ <p id="description">Thanks for visiting us</p>
+  <hr class="description">
+<main>
+<form id="survey-form" thod="post" action='https://register-demo.freecodecamp.org'>
+ <fieldset>
+  <label id="name-label" for="name-label">Name <input id="name" name="name" type="text" placeholder="Enter your name" required/></label> 
+<label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email address" required/></label>
+  <label id="number-label" for="number">Age(optional) <input  id="number" name="age" type="number" placeholder="Age" min="2" max="3" required/></label>
+  <label for="referrer">which option best describes your current role? 
+  <select id="dropdown" name="dropdown">
+<option value="">(select one)</option>
+   <option value="1">student</option>
+   <option value="2">government employee</option>
+   <option value="3"> entrepreneur</option>
+   </select>
+  </label> 
+  <label for="definitely"><input id="definitely" type="radio" name="group" class="inline" value="1"/> definitely</label>
+  <label for="maybe"><input id="maybe" type="radio" name="group" class="inline" value="2"/> maybe</label>
+  <label for="not sure"><input id="not sure" type="radio" name="group" class="inline" value="3"/> not sure</label>  
+  <p class="notice">What would you like to improve</p>
+  <label for="front-end">Front-end projects <input id="front-end" type="checkbox" required name="fron-end" class="inline" value="1"/></label>
+  <label for="back-end">Back-End Projects <input id="back-end" type="checkbox" required name="back-emd" class="inline" value="2"/></label>
+  <label for="data-visualisation">Data-Visualisation<input id="data-visualisation" type="checkbox" required name="data-visualisation" class="inline" value="3"/></label>
+   <label for="bio">Any comments or suggestions:
+   <textarea id="bio" name="bio" rows="6" cols="30" placeholder="Enter Your comments here:"></textarea>
+   </label>
+ </fieldset> 
+ </main> 
+<input id="submit" type="submit" value="Submit" />
+</div>
+</form>
+</body>
+</html>
